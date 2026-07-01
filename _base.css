@@ -30,7 +30,7 @@ nav { background: var(--navy); padding: 0 36px; display: flex; justify-content: 
 .nav-dropdown > a { display: flex; align-items: center; gap: 4px; }
 .nav-dropdown > a::after { content: '▾'; font-size: 10px; opacity: 0.6; }
 .dropdown-menu { display: none; position: absolute; top: calc(100% + 8px); left: -12px; background: #0A2540; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 8px 0; min-width: 220px; z-index: 200; }
-.nav-dropdown:hover .dropdown-menu { display: block; }
+.nav-dropdown.open .dropdown-menu { display: block; }
 .dropdown-menu a { display: block; padding: 9px 18px; color: rgba(255,255,255,0.7); font-size: 12px; white-space: nowrap; }
 .dropdown-menu a:hover { color: #fff; background: rgba(255,255,255,0.05); }
 .dropdown-menu .dropdown-divider { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 6px 0; }
