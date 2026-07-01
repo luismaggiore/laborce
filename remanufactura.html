@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remanufactura | Laborce</title>
+<meta name="description" content="Remanufactura de componentes de maquinaria pesada a especificaciones OEM: mandos finales, motores hidráulicos y cajas de cambio, con garantía y trazabilidad.">
+<link rel="canonical" href="https://www.laborce.cl/remanufactura">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Remanufactura | Laborce">
+<meta property="og:description" content="Remanufactura de componentes de maquinaria pesada a especificaciones OEM: mandos finales, motores hidráulicos y cajas de cambio, con garantía y trazabilidad.">
+<meta property="og:url" content="https://www.laborce.cl/remanufactura">
+<meta property="og:site_name" content="Laborce">
+<meta property="og:locale" content="es_CL">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Remanufactura | Laborce">
+<meta name="twitter:description" content="Remanufactura de componentes de maquinaria pesada a especificaciones OEM: mandos finales, motores hidráulicos y cajas de cambio, con garantía y trazabilidad.">
+<link rel="stylesheet" href="_base.css">
+<style>
+.proceso-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
+.proceso-paso { background: var(--gray-bg); border-radius: 10px; padding: 20px 14px; text-align: center; }
+.paso-num { width: 36px; height: 36px; border-radius: 50%; background: var(--navy); color: #fff; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; }
+.paso h4 { font-size: 12px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.paso p { font-size: 11px; color: var(--muted); line-height: 1.5; }
+.componentes-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
+.comp-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 18px; border-left: 3px solid var(--blue); }
+.comp-card h4 { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.comp-card p { font-size: 12px; color: var(--muted); line-height: 1.55; }
+.credencial-bar { background: #0A2540; border-radius: 10px; padding: 24px 28px; color: #fff; display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
+.cred-item { text-align: center; }
+.cred-num { font-size: 20px; font-weight: 700; color: #3A9BD5; margin-bottom: 4px; }
+.cred-label { font-size: 11px; color: rgba(255,255,255,0.5); line-height: 1.4; }
+.vs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.vs-card { border-radius: 10px; padding: 24px; }
+.vs-nuevo { background: #0A2540; color: #fff; }
+.vs-nuevo h3 { color: #3A9BD5; font-size: 14px; font-weight: 700; margin-bottom: 12px; }
+.vs-nuevo li { font-size: 13px; color: rgba(255,255,255,0.75); line-height: 1.8; }
+.vs-original { background: var(--gray-bg); border: 1px solid var(--border); }
+.vs-original h3 { color: var(--muted); font-size: 14px; font-weight: 700; margin-bottom: 12px; }
+.vs-original li { font-size: 13px; color: var(--muted); line-height: 1.8; }
+ul { list-style: none; padding: 0; }
+ul li::before { content: '✓  '; font-weight: 700; color: #3A9BD5; }
+.vs-original ul li::before { color: var(--muted); }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Remanufactura de Componentes",
+  "name": "Remanufactura de Componentes",
+  "description": "Remanufactura de componentes de maquinaria pesada a especificaciones OEM.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Laborce",
+    "url": "https://www.laborce.cl"
+  },
+  "areaServed": "CL",
+  "url": "https://www.laborce.cl/remanufactura"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿La remanufactura tiene garantía?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Todos los componentes remanufacturados por Laborce se entregan con garantía sobre el trabajo y los materiales utilizados. El alcance específico de la garantía se define en la propuesta técnica de cada trabajo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es equivalente a comprar un componente nuevo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Técnicamente sí, cuando el proceso se realiza a especificaciones OEM. El componente queda en las mismas condiciones dimensionales y de rendimiento que uno nuevo, con la ventaja de un costo significativamente menor y plazos de entrega más cortos que importar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto demora el proceso?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende del componente y su estado de ingreso. La mayoría de los trabajos de mando final e hidráulica se resuelven en 7 a 15 días hábiles. Para componentes de mayor complejidad, el plazo se define en la inspección inicial."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Pueden trabajar en terreno o solo en taller?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Principalmente trabajamos en taller para garantizar las condiciones controladas que requiere el proceso. Para ciertos trabajos de menor escala o urgencias operativas, evaluamos la viabilidad de intervención en terreno."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">LABOR<span>CE</span></a>
+  <div class="nav-links">
+    <div class="nav-dropdown">
+      <a href="#" class="active">Servicios</a>
+      <div class="dropdown-menu">
+        <div class="dropdown-label">Personal</div>
+        <a href="servicios-transitorios.html">Servicios transitorios</a>
+        <a href="outsourcing-reclutamiento.html">Outsourcing y reclutamiento</a>
+        <div class="dropdown-divider"></div>
+        <div class="dropdown-label">Maquinaria</div>
+        <a href="remanufactura.html" style="color:#fff">Remanufactura</a>
+        <a href="asesorias.html">Asesorías en gestión de activos</a>
+      </div>
+    </div>
+    <a href="industrias.html">Industrias</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="blog.html">Blog</a>
+    <a href="trabaja.html">Trabaja con nosotros</a>
+    <a href="contacto.html" class="nav-cta">Contacto</a>
+  </div>
+</nav>
+<div class="serp-preview">
+  <div class="serp-label"><span class="dot"></span>Vista previa en Google (revisión SEO)</div>
+  <div class="serp-url">www.laborce.cl/remanufactura</div>
+  <div class="serp-title">Remanufactura | Laborce</div>
+  <div class="serp-desc">Remanufactura de componentes de maquinaria pesada a especificaciones OEM: mandos finales, motores hidráulicos y cajas de cambio, con garantía y trazabilidad.</div>
+</div>
+
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Inicio</a> · <span>Servicios</span> · <span>Remanufactura</span></div>
+  <div class="badge">Maquinaria pesada · Minería · Construcción</div>
+  <h1>Remanufactura de componentes: <em>el rendimiento del equipo nuevo a una fracción del costo</em></h1>
+  <p>Restauramos componentes críticos de maquinaria pesada a especificaciones OEM. Una alternativa técnicamente equivalente al componente nuevo, con trazabilidad completa y garantía.</p>
+</div>
+
+<div class="section">
+  <div class="section-label">¿Qué es la remanufactura?</div>
+  <h2>No es reparación. Es reconstrucción a estándar de fábrica.</h2>
+  <p class="lead">La remanufactura es un proceso industrial que devuelve el componente a las especificaciones originales del fabricante (OEM), reemplazando todas las piezas de desgaste y sometiendo el resultado a los mismos controles que un componente nuevo.</p>
+
+  <div class="vs-grid" style="margin-bottom:28px">
+    <div class="vs-card vs-nuevo">
+      <h3>Remanufactura Laborce</h3>
+      <ul>
+        <li>Desmontaje y limpieza total del componente</li>
+        <li>Inspección dimensional y de fatiga en todas las piezas</li>
+        <li>Reemplazo de todos los elementos de desgaste</li>
+        <li>Reconstrucción a especificaciones OEM</li>
+        <li>Pruebas de banco antes de la entrega</li>
+        <li>Garantía sobre el trabajo realizado</li>
+        <li>Trazabilidad del proceso completo</li>
+      </ul>
+    </div>
+    <div class="vs-card vs-original">
+      <h3>Reparación convencional</h3>
+      <ul style="opacity:0.7">
+        <li>Intervención puntual sobre la falla visible</li>
+        <li>Piezas de desgaste reemplazadas según necesidad inmediata</li>
+        <li>Sin desmontaje total del componente</li>
+        <li>Sin pruebas de banco sistemáticas</li>
+        <li>Garantía limitada al punto intervenido</li>
+        <li>Menor costo inicial, mayor frecuencia de falla</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="credencial-bar">
+    <div class="cred-item"><div class="cred-num">CAEX 960/930/830</div><div class="cred-label">Modelos de camión con experiencia comprobada en terreno</div></div>
+    <div class="cred-item"><div class="cred-num">PC8000</div><div class="cred-label">Excavadoras hidráulicas de gran escala intervenidas</div></div>
+    <div class="cred-item"><div class="cred-num">OEM</div><div class="cred-label">Especificaciones de fábrica como estándar de reconstrucción</div></div>
+    <div class="cred-item"><div class="cred-num">Norte Grande</div><div class="cred-label">Experiencia en las principales operaciones mineras de Chile</div></div>
+  </div>
+</div>
+
+<div class="section section-alt">
+  <div class="section-label">Proceso</div>
+  <h2>Cómo trabajamos un componente</h2>
+  <p class="lead">Un proceso estructurado con trazabilidad en cada etapa, desde la recepción hasta la entrega con prueba de banco.</p>
+  <div class="proceso-grid">
+    <div class="proceso-paso">
+      <div class="paso-num">1</div>
+      <h4 class="paso">Recepción e inspección</h4>
+      <p class="paso">Evaluamos el estado del componente, documentamos las condiciones de ingreso y definimos el alcance del trabajo.</p>
+    </div>
+    <div class="proceso-paso">
+      <div class="paso-num">2</div>
+      <h4 class="paso">Desmontaje y limpieza</h4>
+      <p class="paso">Desmontaje total, limpieza industrial y revisión dimensional de cada pieza. Separamos lo recuperable de lo que se reemplaza.</p>
+    </div>
+    <div class="proceso-paso">
+      <div class="paso-num">3</div>
+      <h4 class="paso">Reconstrucción</h4>
+      <p class="paso">Reemplazo de todos los elementos de desgaste y reconstrucción a especificaciones OEM con piezas nuevas certificadas.</p>
+    </div>
+    <div class="proceso-paso">
+      <div class="paso-num">4</div>
+      <h4 class="paso">Prueba y entrega</h4>
+      <p class="paso">Prueba de banco, reporte técnico completo y entrega con garantía. Trazabilidad disponible en cada etapa del proceso.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">Componentes</div>
+  <h2>Qué remanufacturamos</h2>
+  <p class="lead">Experiencia comprobada en los sistemas críticos de maquinaria pesada para minería y construcción.</p>
+  <div class="componentes-grid">
+    <div class="comp-card"><h4>Mandos finales</h4><p>Sistemas de transmisión de potencia al tren de rodaje en excavadoras y bulldozers.</p></div>
+    <div class="comp-card"><h4>Motores hidráulicos</h4><p>Motores de desplazamiento variable y fijo para sistemas hidráulicos de maquinaria pesada.</p></div>
+    <div class="comp-card"><h4>Bombas hidráulicas</h4><p>Bombas de pistón y de paletas para circuitos de trabajo, piloto y enfriamiento.</p></div>
+    <div class="comp-card"><h4>Cajas de cambio</h4><p>Transmisiones de camiones de acarreo CAEX y equipos de movimiento de tierra.</p></div>
+    <div class="comp-card"><h4>Diferencial y corona</h4><p>Sistemas de tracción y distribución de torque para camiones y equipos auxiliares de mina.</p></div>
+    <div class="comp-card"><h4>Otros componentes</h4><p>¿Tiene un componente fuera de esta lista? Cuéntenos la máquina y el sistema. Evaluamos el alcance.</p></div>
+  </div>
+</div>
+
+<div class="section section-alt">
+  <div class="section-label">Preguntas frecuentes</div>
+  <h2>Dudas sobre remanufactura</h2>
+  <details class="faq-item"><summary>¿La remanufactura tiene garantía?</summary><p>Sí. Todos los componentes remanufacturados por Laborce se entregan con garantía sobre el trabajo y los materiales utilizados. El alcance específico de la garantía se define en la propuesta técnica de cada trabajo.</p></details>
+  <details class="faq-item"><summary>¿Es equivalente a comprar un componente nuevo?</summary><p>Técnicamente sí, cuando el proceso se realiza a especificaciones OEM. El componente queda en las mismas condiciones dimensionales y de rendimiento que uno nuevo, con la ventaja de un costo significativamente menor y plazos de entrega más cortos que importar.</p></details>
+  <details class="faq-item"><summary>¿Cuánto demora el proceso?</summary><p>Depende del componente y su estado de ingreso. La mayoría de los trabajos de mando final e hidráulica se resuelven en 7 a 15 días hábiles. Para componentes de mayor complejidad, el plazo se define en la inspección inicial.</p></details>
+  <details class="faq-item"><summary>¿Pueden trabajar en terreno o solo en taller?</summary><p>Principalmente trabajamos en taller para garantizar las condiciones controladas que requiere el proceso. Para ciertos trabajos de menor escala o urgencias operativas, evaluamos la viabilidad de intervención en terreno.</p></details>
+</div>
+
+<div class="cta-band">
+  <h2>¿Tiene un componente que necesita recuperar?</h2>
+  <p>Cuéntenos la máquina, el sistema y el estado del componente. Le respondemos con una evaluación técnica y un presupuesto.</p>
+  <div class="cta-row">
+    <a href="contacto.html" class="btn-white">Solicitar presupuesto</a>
+    <a href="https://wa.me/56983424163" class="btn-whatsapp">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.533 5.854L0 24l6.336-1.503A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.797 9.797 0 0 1-5.064-1.407l-.364-.216-3.76.892.952-3.663-.237-.376A9.779 9.779 0 0 1 2.182 12C2.182 6.573 6.573 2.182 12 2.182S21.818 6.573 21.818 12 17.427 21.818 12 21.818z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col"><div class="logo" style="margin-bottom:10px">LABOR<span style="color:#3A9BD5">CE</span></div><p>Servicios transitorios, outsourcing, remanufactura y asesorías para operaciones exigentes.</p><p style="margin-top:12px">gerencia.comercial@laborce.cl<br>Av. Coraceros 50C, Alto Libertad 305, Viña del Mar</p></div>
+    <div class="footer-col"><h5>Servicios</h5><a href="servicios-transitorios.html">Servicios transitorios</a><a href="outsourcing-reclutamiento.html">Outsourcing de personal</a><a href="remanufactura.html">Remanufactura</a><a href="asesorias.html">Asesorías</a></div>
+    <div class="footer-col"><h5>Industrias</h5><a href="industria-mineria.html">Minería Norte Grande</a><a href="industria-hoteleria.html">Hotelería y turismo</a></div>
+    <div class="footer-col"><h5>Empresa</h5><a href="nosotros.html">Nosotros</a><a href="blog.html">Blog y normativa</a><a href="trabaja.html">Trabaja con nosotros</a><a href="contacto.html">Contacto</a></div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 Laborce EST SpA · Viña del Mar, Valparaíso</p><p>Ley 20.123 · D.S. 132</p></div>
+</footer>
+</body>
+</html>
